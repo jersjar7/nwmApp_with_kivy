@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en"><head>
+        <meta charset="utf-8">
+        <title>Delta Wi-Fi</title>
+        <base href="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="expires" content="0">
+        <meta name="theme-color" content="#000520">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_32x32.png?v=deltaportal">
+        <link rel="icon" type="image/png" sizes="128x128" href="/assets/favicon_128x128.png?v=deltaportal">
+        <link rel="icon" type="image/png" sizes="152x152" href="/assets/favicon_152x152.png?v=deltaportal">
+        <link rel="icon" type="image/png" sizes="167x167" href="/assets/favicon_167x167.png?v=deltaportal">
+        <link rel="icon" type="image/png" sizes="180x180" href="/assets/favicon_180x180.png?v=deltaportal">
+        <link rel="icon" type="image/x-icon" href="favicon.ico?v=deltaportal">
+
+        <style>
+            body {
+                background-color: #000520;
+            }
+        </style>
+        <script>
+            if (window.navigator.userAgent.match(/(MSIE|Trident)/)) {
+                window.location.replace("/compatibility.html");
+            }
+        </script>
+        <script>
+            if (window.location.pathname.startsWith("/media/10000")) {
+                window.location.replace("/captive/");
+            }
+        </script>
+    <style>html,body{padding:0;margin:0;height:100%;font-size:16px;-webkit-text-size-adjust:100%;-moz-text-size-adjust:none;-ms-text-size-adjust:100%}html{background-color:#01061e;font-family:Whitney,Arial,Helvetica,sans-serif}@font-face{font-family:Whitney;src:url(/assets/fonts/A32A3E152E391B379.4c323e775ad83e911ae2.woff2) format("woff2");font-weight:300;font-style:normal}@font-face{font-family:Whitney;src:url(/assets/fonts/560247561D61316B0.b6511228943548ad7204.woff2) format("woff2");font-weight:300;font-style:italic}@font-face{font-family:Whitney;src:url(/assets/fonts/CB8837CA379681FED.ea32b8c544893cd26e86.woff2) format("woff2");font-weight:400;font-style:normal}@font-face{font-family:Whitney;src:url(/assets/fonts/C38C81DE2B6590D68.2c3ca47a7188e3be3d56.woff2) format("woff2");font-weight:400;font-style:italic}@font-face{font-family:Whitney;src:url(/assets/fonts/AABA9C13AF9C5C638.9dfe2652486e5c52d115.woff2) format("woff2");font-weight:500;font-style:normal}@font-face{font-family:Whitney;src:url(/assets/fonts/A5B691C26F8CABBC2.e5958c87b758a5bc2dd4.woff2) format("woff2");font-weight:500;font-style:italic}@font-face{font-family:Whitney;src:url(/assets/fonts/3955045D2CF71A4B6.f3579b5065f95c422c39.woff2) format("woff2");font-weight:600;font-style:normal}@font-face{font-family:Whitney;src:url(/assets/fonts/2AEF2F564D90434B1.49a148ddbd8297b56e19.woff2\ ) format("woff2");font-weight:600;font-style:italic}@font-face{font-family:Whitney;src:url(/assets/fonts/5F3C862F467F43533.d40f6e46152d0cc1e504.woff2) format("woff2");font-weight:700;font-style:normal}@font-face{font-family:Whitney;src:url(/assets/fonts/A4735881B447BC24E.5b8614fe2ba17c3e6f96.woff2) format("woff2");font-weight:800;font-style:normal}</style><link rel="stylesheet" href="styles.ed8859d7e9d87a87.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.ed8859d7e9d87a87.css"></noscript></head>
+    <body>
+        <app-root></app-root>
+    <script src="runtime.47f22d304e7c5d0e.js" type="module"></script><script src="polyfills.c1011c1144e510cd.js" type="module"></script><script src="main.e44e9ab951d37b01.js" type="module"></script>
+
+</body></html>

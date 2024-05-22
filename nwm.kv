@@ -1,0 +1,111 @@
+#:import MapView kivy_garden.mapview.MapView
+#:import WindowManager kivy.app
+
+
+ScreenManager:
+    MapScreen:
+        name: "map"
+    ForecastScreen:
+        name: "forecast"
+
+<MapScreen>
+    md_bg_color: self.theme_cls.surfaceColor
+
+    BoxLayout:
+        
+        orientation: "vertical"
+        size: root.width, root.height
+        padding: 20
+    
+        GridLayout:
+            cols: 1
+            rows: 3
+            
+            # Map Screen Title
+            MDLabel:
+                text: "NWM STREAM FORECAST"
+                size_hint: 1,.05
+
+                # Label Text Properties
+                font_size: 30
+
+            # Map Screen Subtitle
+            MDLabel:
+                id: station_id
+                text: "No Location Selected"
+                pos_hint: {"center_x": .5, "center_y": .5}
+                color: (0,0,0,1)
+                bold: True
+                size_hint: 1,.03
+                outline_color: (1,1,1) #white
+                outline_width: 2
+
+                # Label Text Properties
+                font_size: 20
+
+            MapView:
+                id: main_map
+                lat: 40.2457
+                lon: -111.649
+                zoom: 12
+                on_press: 
+                    
+                
+                
+        MDLabel:
+            text: ""
+            font_size: 24
+            size_hint: 1,.03
+            halign: "center"
+
+        MDButton:
+            style: "elevated"
+            pos_hint: {"center_x": .5, "center_y": .5}
+            on_press: 
+                root.manager.current = 'forecast'
+                root.manager.transition.direction = "left"
+
+            MDButtonIcon:
+                icon: "plus"
+
+            MDButtonText:
+                text: "Get Forecast"
+
+<ForecastScreen>
+    md_bg_color: self.theme_cls.surfaceColor
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        padding: 20
+
+        GridLayout:
+            cols: 1
+            rows: 3
+        
+
+            MDLabel:
+                text: "Forecast Screen"
+                size_hint: 1,.05
+                font_size: 24
+                theme_text_color: "Custom"
+                text_color: 0, 0, 1, 1
+                halign: "center"
+
+            BoxLayout:
+                id: plot_container
+                size_hint_y: 0.7  # Adjust the size as needed
+                padding: 20
+
+            MDButton:
+                style: "elevated"
+                pos_hint: {"center_x": .5, "center_y": .5}
+                on_press: 
+                    root.manager.current = "map"
+                    root.manager.transition.direction = "right"
+
+                MDButtonIcon:
+                    icon: "plus"
+
+                MDButtonText:
+                    text: "Back to Map"
